@@ -1,0 +1,7 @@
+{
+    "board": "esp8266:esp8266:d1_mini",
+    "configuration": "CpuFrequency=80,UploadSpeed=921600,FlashSize=4M3M",
+    "port": "/dev/ttyUSB0",
+    "sketch": "02_Arduino/02/02_MultipleFiles/program.ino",
+    "output": "output"
+}

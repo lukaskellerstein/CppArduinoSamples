@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "01 - (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build c++ Simple",
+            "program": "${workspaceFolder}/01_Cpp/01/simple",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb"
+        },
+        {
+            "name": "02 - (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build c++ Calculator",
+            "program": "${workspaceFolder}/01_Cpp/02/calculator",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb"
+        },
+        {
+            "name": "03 - (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build c++ Program",
+            "program": "${workspaceFolder}/01_Cpp/03/program",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb"
+        }
+    ]
+}
