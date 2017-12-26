@@ -39,6 +39,19 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb"
+        },
+        {
+            "name": "04 - (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build c++ Library",
+            "program": "${workspaceFolder}/01_Cpp/04_CustomLibrary/program",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb"
         }
     ]
 }

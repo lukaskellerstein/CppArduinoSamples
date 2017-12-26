@@ -2,9 +2,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build c++ Simple",
+            "label": "build c++ 01",
             "type": "shell",
             "command": "g++ -g 01_Cpp/01/simple.cpp -o 01_Cpp/01/simple",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build c++ 01b",
+            "type": "shell",
+            "command": "g++ -g 01_Cpp/01b/simple.cpp -o 01_Cpp/01b/simple",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -25,6 +35,16 @@
             "label": "build c++ Program",
             "type": "shell",
             "command": "g++ -g 01_Cpp/03/program.cpp -o 01_Cpp/03/program",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build c++ Library",
+            "type": "shell",
+            "command": "g++ -g 01_Cpp/04_CustomStaticLibrary/program.cpp -o 01_Cpp/04_CustomStaticLibrary/program",
             "group": {
                 "kind": "build",
                 "isDefault": true
