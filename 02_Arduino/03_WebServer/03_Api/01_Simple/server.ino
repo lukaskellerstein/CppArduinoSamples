@@ -31,7 +31,7 @@ void setup(void)
   // Set up the endpoints for HTTP server
   //
   // Endpoints can be written as inline functions:
-  server.on("/", handle_webpage);
+  server.on("/", handle_getInfo);
 
   // Start the server
   server.begin();
@@ -49,40 +49,20 @@ void loop(void)
 /*                       HANDLER                       */
 /*******************************************************/
 
-String setHeader()
+void handle_getInfo()
 {
-  String result = "";
-  result += "<head>";
-  result += "<meta http-equiv='refresh' content='10'/>";
-  result += "<title>ESP8266 Demo</title>";
-  result += "<style> body { background-color: #fffff; font-family: Arial, Helvetica, Sans-Serif; Color: #000088; }</style>";
-  result += "</head>";
-  return result;
-}
+  std::string result = "";
+  result += "{";
+  result += "\"error\": \"\",";
+  result += "\"data\": {";
+  result += "\"senzorID\": \"\",";
+  result += "\"wifiSSID\": \"\",";
+  result += "\"wifiPsswd\": \"\",";
+  result += "\"mqttUrl\": \"\",";
+  result += "\"mqttUsername\": \"\",";
+  result += "\"mqttPsswd\": \"\"";
+  result += "}";
+  result += "}";
 
-String setBody()
-{
-  String result = "";
-  result += "<body>";
-  result += "<h1>ESP8266 Demo</h1>";
-  result += "<h3>Some header text</h3>";
-  result += "</body>";
-  return result;
-}
-
-String getPage()
-{
-  String page = "<html>";
-
-  page += setHeader();
-
-  page += setBody();
-  
-  page += "</html>";
-  return page;
-}
-
-void handle_webpage()
-{
-  server.send(200, "text/html", getPage());
+  server.send(200, "text/json", result.c_str());
 }
