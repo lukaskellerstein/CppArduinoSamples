@@ -9,7 +9,6 @@ ESP8266WebServer server(80);
 
 void setup(void) {
   Serial.begin(115200);
-  Serial.println("");
   
   // Connect to WiFi network
   WiFi.begin(ssid, password);
