@@ -78,6 +78,19 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb"
+        },
+        {
+            "name": "06_Memory-Address Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build 06_Memory-Address",
+            "program": "${workspaceFolder}/01_Cpp/06_Memory-Address/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb"
         }
     ]
 }

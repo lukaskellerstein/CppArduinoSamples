@@ -3,7 +3,7 @@
 //without this, we must use std::string, std::cout ... etc.
 using namespace std;
 
-int func()
+int main()
 {
 
     //FOR

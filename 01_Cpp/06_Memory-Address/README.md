@@ -1,4 +1,15 @@
 
+# Output
+
+
+```Shell
+value : some text
+memory address : 0x7fffffffded0
+value 0 : 0memory address : 0x7fffffffdf10
+value 1 : 1memory address : 0x7fffffffdf14
+value 2 : 2memory address : 0x7fffffffdf18
+```
+
 # Build and Run via Command line
 
 Build
@@ -28,11 +39,3 @@ F5
 Must be set right lauch task
 ![alt tag](https://raw.githubusercontent.com/lukaskellerstein/CppArduinoSamples/master/images/Selection_027.png)
 
-
-# Output
-
-
-```Shell
-some text
-0x7fffffffdef0
-```
