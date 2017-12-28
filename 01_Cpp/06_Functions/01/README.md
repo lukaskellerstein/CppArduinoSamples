@@ -3,12 +3,12 @@
 
 Build
 ```Shell
-g++ -g 03_For-If-Switch/main.cpp -o 03_For-If-Switch/main
+g++ -g 06_Functions/01/main.cpp -o 06_Functions/01/main
 ```
 
 Run
 ```Shell
-./03_For-If-Switch/main
+./06_Functions/01/main
 ```
 
 # Build and Run via VSCode
@@ -18,7 +18,7 @@ Build, select task
 Ctrl + Shift + B
 ```
 Select Task
-`build 03_For-If-Switch` 
+`build 06_Functions/01` 
 
 Run
 ```Shell

@@ -2,19 +2,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build 01_Simple/01",
+            "label": "build 00_Simple",
             "type": "shell",
-            "command": "g++ -std=c++11 -g 01_Cpp/01_Simple/01/simple.cpp -o 01_Cpp/01_Simple/01/simple",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": "$gcc"
-        },
-        {
-            "label": "build 01_Simple/02",
-            "type": "shell",
-            "command": "g++ -std=c++11 -g 01_Cpp/01_Simple/02/simple.cpp -o 01_Cpp/01_Simple/02/simple",
+            "command": "g++ -std=c++11 -g 01_Cpp/00_Simple/main.cpp -o 01_Cpp/01_Simple/main",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -32,19 +22,9 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build 03_For-If-Switch",
+            "label": "build 04_For-If-Switch",
             "type": "shell",
-            "command": "g++ -std=c++11 -g 01_Cpp/03_For-If-Switch/main.cpp -o 01_Cpp/03_For-If-Switch/main",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": "$gcc"
-        },
-        {
-            "label": "build 04_Functions",
-            "type": "shell",
-            "command": "g++ -std=c++11 -g 01_Cpp/04_Functions/simple.cpp -o 01_Cpp/04_Functions/simple",
+            "command": "g++ -std=c++11 -g 01_Cpp/04_For-If-Switch/main.cpp -o 01_Cpp/04_For-If-Switch/main",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -62,9 +42,29 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build 06_Memory-Address",
+            "label": "build 06_Functions/01",
             "type": "shell",
-            "command": "g++ -std=c++11 -g 01_Cpp/06_Memory-Address/main.cpp -o 01_Cpp/06_Memory-Address/main",
+            "command": "g++ -std=c++11 -g 01_Cpp/06_Functions/01/main.cpp -o 01_Cpp/06_Functions/01/main",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build 06_Functions/02",
+            "type": "shell",
+            "command": "g++ -std=c++11 -g 01_Cpp/06_Functions/02/main.cpp -o 01_Cpp/06_Functions/02/main",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build 07_Memory-Address",
+            "type": "shell",
+            "command": "g++ -std=c++11 -g 01_Cpp/07_Memory-Address/main.cpp -o 01_Cpp/07_Memory-Address/main",
             "group": {
                 "kind": "build",
                 "isDefault": true

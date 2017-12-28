@@ -14,12 +14,12 @@ value 2 : 2memory address : 0x7fffffffdf18
 
 Build
 ```Shell
-g++ -g 02_Memory-Address/main.cpp -o 02_Memory-Address/main
+g++ -g 07_Memory-Address/main.cpp -o 07_Memory-Address/main
 ```
 
 Run
 ```Shell
-./02_Memory-Address/main
+./07_Memory-Address/main
 ```
 
 # Build and Run via VSCode
@@ -29,7 +29,7 @@ Build, select task
 Ctrl + Shift + B
 ```
 Select Task
-`build 02_Memory-Address` 
+`build 07_Memory-Address` 
 
 Run
 ```Shell

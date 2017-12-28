@@ -3,12 +3,12 @@
 
 Build
 ```Shell
-g++ -g 01_Simple/02/simple.cpp -o 01_Simple/02/simple
+g++ -g 05_Collections/main.cpp -o 05_Collections/main
 ```
 
 Run
 ```Shell
-./01_Simple/02/simple
+./05_Collections/main
 ```
 
 # Build and Run via VSCode
@@ -18,12 +18,12 @@ Build, select task
 Ctrl + Shift + B
 ```
 Select Task
-`build 01_Simple/02` 
+`build 05_Collections` 
 
 Run
 ```Shell
 F5
 ```
 
-Must be set the right lauch task
+Must be set right lauch task
 ![alt tag](https://raw.githubusercontent.com/lukaskellerstein/CppArduinoSamples/master/images/Selection_027.png)
