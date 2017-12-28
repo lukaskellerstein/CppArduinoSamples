@@ -15,6 +15,16 @@ int main(){
     cout << someText << endl; //value
     cout << &someText << endl; //memory address
 
+
+
+
+
+
+
+
+
+
+    //READLINE
     string input;
     cin >> input;
 }
