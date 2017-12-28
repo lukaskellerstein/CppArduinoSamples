@@ -2,9 +2,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build c++ 01",
+            "label": "build 01_Simple/01",
             "type": "shell",
-            "command": "g++ -g 01_Cpp/01/simple.cpp -o 01_Cpp/01/simple",
+            "command": "g++ -g 01_Cpp/01_Simple/01/simple.cpp -o 01_Cpp/01_Simple/01/simple",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -12,9 +12,9 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build c++ 01b",
+            "label": "build 01_Simple/02",
             "type": "shell",
-            "command": "g++ -g 01_Cpp/01b/simple.cpp -o 01_Cpp/01b/simple",
+            "command": "g++ -g 01_Cpp/01_Simple/02/simple.cpp -o 01_Cpp/01_Simple/02/simple",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -22,9 +22,9 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build c++ Calculator",
+            "label": "build 02_Variables",
             "type": "shell",
-            "command": "g++ -g 01_Cpp/02/calculator.cpp -o 01_Cpp/02/calculator",
+            "command": "g++ -g 01_Cpp/02_Variables/main.cpp -o 01_Cpp/02_Variables/main",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -32,9 +32,9 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build c++ Program",
+            "label": "build 03_For-If-Switch",
             "type": "shell",
-            "command": "g++ -g 01_Cpp/03/program.cpp -o 01_Cpp/03/program",
+            "command": "g++ -g 01_Cpp/03_For-If-Switch/main.cpp -o 01_Cpp/03_For-If-Switch/main",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -42,9 +42,29 @@
             "problemMatcher": "$gcc"
         },
         {
-            "label": "build c++ Library",
+            "label": "build 04_Functions",
             "type": "shell",
-            "command": "g++ -g 01_Cpp/04_CustomStaticLibrary/program.cpp -o 01_Cpp/04_CustomStaticLibrary/program",
+            "command": "g++ -g 01_Cpp/04_Functions/simple.cpp -o 01_Cpp/04_Functions/simple",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build 05_Collections",
+            "type": "shell",
+            "command": "g++ -g 01_Cpp/05_Collections/main.cpp -o 01_Cpp/05_Collections/main",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "build 06_Memory-Address",
+            "type": "shell",
+            "command": "g++ -g 01_Cpp/06_Memory-Address/main.cpp -o 01_Cpp/06_Memory-Address/main",
             "group": {
                 "kind": "build",
                 "isDefault": true
