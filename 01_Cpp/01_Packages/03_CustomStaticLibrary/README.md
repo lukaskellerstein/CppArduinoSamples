@@ -1,4 +1,30 @@
-# Steps
+# Right way
+
+> USE MAKEFILE and build packages one after another
+
+## Steps
+
+1. Build 
+
+```Shell
+make
+```
+
+2. Run
+
+```Shell
+./app.out
+```
+
+3. Clean
+
+```Shell
+make clean
+```
+
+# Manual way
+
+## Steps
 
 1. Build each custom static library
 

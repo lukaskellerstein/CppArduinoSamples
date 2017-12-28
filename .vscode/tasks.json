@@ -12,6 +12,37 @@
             "problemMatcher": "$gcc"
         },
         {
+            "label": "build 01_Packages/01_NoPackage",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",
+                "-g",
+                "01_Cpp/01_Packages/01_NoPackage/main.cpp",
+                "-o",
+                "01_Cpp/01_Packages/01_NoPackage/main"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build 01_Packages/02_Basics",
+            "type": "shell",
+            "command": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/01_Cpp/01_Packages/02_Basics"
+            },
+        },
+        {
             "label": "build 02_Variables",
             "type": "shell",
             "command": "g++ -std=c++11 -g 01_Cpp/02_Variables/main.cpp -o 01_Cpp/02_Variables/main",
