@@ -2,11 +2,10 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
+using namespace std;
+
 //Internal libraries
-#include "pages/pages.h"
-#include "pages/homepage.cpp"
-#include "pages/aboutpage.cpp"
-#include "pages/contactpage.cpp"
+#include "pages.h"
 
 const char *ssid = "CellarstoneDevicesWifi";
 const char *password = "Cllrs123IoT456";
@@ -14,12 +13,16 @@ const char *password = "Cllrs123IoT456";
 // HTTP server will listen at port 80
 ESP8266WebServer server(80);
 
-HomePage temphomepage = HomePage();
-AboutPage tempaboutpage = AboutPage();
-ContactPage tempcontactpage = ContactPage();
+HomePage temphomepage;
+AboutPage tempaboutpage;
+ContactPage tempcontactpage;
+
+void handle_homepage();
+void handle_aboutpage();
+void handle_contactpage();
 
 //SETUP
-void setup(void)
+void setup()
 {
     Serial.begin(115200);
     Serial.println("");
@@ -53,7 +56,7 @@ void setup(void)
 }
 
 //LOOP
-void loop(void)
+void loop()
 {
     // check for incomming client connections frequently in the main loop:
     server.handleClient();
@@ -65,18 +68,18 @@ void loop(void)
 
 void handle_homepage()
 {
-    std::string temp = temphomepage.getHTML();
+    string temp = temphomepage.getHTML();
     server.send(200, "text/html", temp.c_str());
 }
 
 void handle_aboutpage()
 {
-    std::string temp = tempaboutpage.getHTML();
+    string temp = tempaboutpage.getHTML();
     server.send(200, "text/html", temp.c_str());
 }
 
 void handle_contactpage()
 {
-    std::string temp = tempcontactpage.getHTML();
+    string temp = tempcontactpage.getHTML();
     server.send(200, "text/html", temp.c_str());
 }

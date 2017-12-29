@@ -3,9 +3,7 @@
 #include <ESP8266WebServer.h>
 
 //Internal libraries
-#include "pages/pages.h"
-#include "pages/homepage.cpp"
-#include "pages/settings.cpp"
+#include "pages.h"
 
 using namespace std;
 
@@ -15,14 +13,19 @@ const char *password = "Cllrs123IoT456";
 // HTTP server will listen at port 80
 ESP8266WebServer server(80);
 
-HomePage temphomepage = HomePage();
-SettingsPage tempsettingspage = SettingsPage();
+HomePage temphomepage;
+SettingsPage tempsettingspage;
 
 //INPUTS
 string senzorid = "";
 string wifissid = "";
 string wifipsswd = "";
 string mqtturl = "";
+
+void handle_homepage();
+void handle_settingspage();
+void handle_submitpage();
+
 
 //SETUP
 void setup(void)

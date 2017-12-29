@@ -1,7 +1,6 @@
 #ifndef PAGES_H
 #define PAGES_H
 
-#include <Arduino.h> //needed for Serial.println
 #include <string>
 
 
