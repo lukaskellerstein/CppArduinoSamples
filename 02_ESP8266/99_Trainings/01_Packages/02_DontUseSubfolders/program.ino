@@ -3,12 +3,16 @@
 
 SomeClass2 class2;
 
-void setup(){/*nothing to setup*/}
+void setup(){
+    Serial.begin(115200);
+}
 
 
 void loop()
 {
-    class2.PrintSomething();
+    string text = class2.PrintSomething();
+
+    Serial.printl(text.c_str());
 
     delay(1000);
 }
